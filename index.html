@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <title>Pinch!</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+      <div class="page1">
+            <img src="img\pg1_title.png">
+            <img src="img\pg1_subtitle.png">
+            <button id="clickToBottom" type="button"><img class="pg1_button" src="img\pg1_button.png"></button>
+      </div>
+      <div class="page2">
+            <img src="img\pg2_text.png">
+            <img src="img\pg2_img.png">
+      </div>
+      <div class="page3">
+            <img src="img\pg3_text.png">
+            <img src="img\pg3_img.png">
+      </div>
+      <div class="page4">
+            <img src="img\pg4_text.png">
+            <img src="img\pg4_img.png">
+      </div>
+      <div class="page5">
+            <img src="img\pg5_a.png">
+            <img src="img\pg5_b.png">
+            <img src="img\pg5_c.png">
+      </div>
+      <div class="page6">
+            <img src="img\pg6_title.png">
+            <img src="img\pg6_subtitle.png">
+            <form id="submitEmail">
+                  <input placeholder=" 이메일 주소를 남겨주세요*">
+                  <button>제출할게요</button>
+            </form>
+      </div>
+  </div>
+</body>
+<script>
+      const button = document.getElementById("clickToBottom");
+      const onClick = () => {
+            window.scrollTo(0, document.body.scrollHeight);
+      }
+      button.addEventListener('click', onClick);
+</script>
+<script>
+      const form = document.getElementById("submitEmail");
+      const onSubmit = () => {
+            alert("감사합니다! 좋은 서비스로 찾아 뵙겠습니다!!");
+      }
+      form.addEventListener("submit", onSubmit);
+</script>
+</html>
